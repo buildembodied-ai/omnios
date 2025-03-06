@@ -1,0 +1,17 @@
+[workspace]
+exclude =  ["scripts"]
+resolver = "2"
+members = ["crates/omnios-core"]
+
+[workspace.package]
+edition = "2024"
+rust-version = "1.85"
+authors = ["buildembodied-ai"]
+license = "MIT"
+
+[profile.release]
+strip = true
+lto = "fat"
+
+[profile.dist]
+inherits = "release"

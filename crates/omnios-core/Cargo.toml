@@ -1,0 +1,11 @@
+[package]
+name = "omnios-core"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+heapless = "0.8.0"
+ring = { version = "0.17.12", default-features = false }
